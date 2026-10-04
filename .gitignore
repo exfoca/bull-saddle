@@ -1,0 +1,146 @@
+# ==============================================================================
+# BullSaddle — Developed by Orion Impact (https://orion-impact.com)
+# Licensed under the Apache License, Version 2.0.
+# SPDX-License-Identifier: Apache-2.0
+# ==============================================================================
+#
+# This repository contains source code and development artifacts only.
+# User configuration, persistent data, runtime state, indexes, databases,
+# caches and operational logs must live in platform-specific user directories.
+#
+# No application runtime state should ever be written to the repository tree.
+# Do not add ignore rules for BullSaddle user or runtime state: such files must
+# remain visible because their presence in this checkout is an architecture bug.
+# ==============================================================================
+
+
+# ------------------------------------------------------------------------------
+# Rust / Cargo
+# ------------------------------------------------------------------------------
+
+/target/
+
+# Rust compiler backup files
+**/*.rs.bk
+
+
+# ------------------------------------------------------------------------------
+# Rust profiling / coverage
+# ------------------------------------------------------------------------------
+
+*.profraw
+*.profdata
+lcov.info
+/coverage/
+
+.tarpaulin-report.html
+
+perf.data
+perf.data.old
+/flamegraph.svg
+
+
+# ------------------------------------------------------------------------------
+# Rust test tooling
+# ------------------------------------------------------------------------------
+
+.nextest/
+
+
+# ------------------------------------------------------------------------------
+# Node.js
+# ------------------------------------------------------------------------------
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ------------------------------------------------------------------------------
+# TypeScript
+# ------------------------------------------------------------------------------
+
+*.tsbuildinfo
+
+
+# ------------------------------------------------------------------------------
+# Svelte / Vite
+# ------------------------------------------------------------------------------
+
+.svelte-kit/
+/dist/
+/build/
+
+.vite/
+
+
+# ------------------------------------------------------------------------------
+# Nix
+# ------------------------------------------------------------------------------
+
+result
+result-*
+
+.direnv/
+
+
+# ------------------------------------------------------------------------------
+# Development environment
+# ------------------------------------------------------------------------------
+
+.env
+.env.local
+.env.*.local
+
+!.env.example
+!.env.sample
+
+
+# ------------------------------------------------------------------------------
+# Test-generated artifacts
+# ------------------------------------------------------------------------------
+
+/test-results/
+
+
+# ------------------------------------------------------------------------------
+# IDEs / editors
+# ------------------------------------------------------------------------------
+
+.idea/
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+*.swp
+*.swo
+*~
+.#*
+
+
+# ------------------------------------------------------------------------------
+# Operating system
+# ------------------------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+Desktop.ini
+
+
+# ------------------------------------------------------------------------------
+# Patch / editor leftovers
+# ------------------------------------------------------------------------------
+
+*.bak
+*.old
+*.orig
+*.rej
