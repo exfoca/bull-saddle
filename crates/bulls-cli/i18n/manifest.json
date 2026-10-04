@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "default_locale": "en-US",
+  "locales": [
+    {
+      "tag": "en-US",
+      "name": "English",
+      "aliases": [
+        "en",
+        "en-US"
+      ],
+      "language_fallback": "en"
+    },
+    {
+      "tag": "pt-BR",
+      "name": "Português (Brasil)",
+      "aliases": [
+        "pt",
+        "pt-BR"
+      ]
+    },
+    {
+      "tag": "es",
+      "name": "Español",
+      "aliases": [
+        "es"
+      ],
+      "language_fallback": "es"
+    },
+    {
+      "tag": "de",
+      "name": "Deutsch",
+      "aliases": [
+        "de"
+      ],
+      "language_fallback": "de"
+    },
+    {
+      "tag": "ja",
+      "name": "日本語",
+      "aliases": [
+        "ja"
+      ],
+      "language_fallback": "ja"
+    },
+    {
+      "tag": "zh-Hans",
+      "name": "简体中文",
+      "aliases": [
+        "zh-Hans",
+        "zh-CN",
+        "zh-SG"
+      ]
+    }
+  ]
+}

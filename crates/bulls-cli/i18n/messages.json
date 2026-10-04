@@ -1,0 +1,934 @@
+{
+  "schema_version": 1,
+  "messages": {
+    "cli.discovery": {
+      "parameters": []
+    },
+    "cli.error": {
+      "parameters": []
+    },
+    "cli.error.runtime": {
+      "parameters": [
+        "error_code"
+      ]
+    },
+    "cli.error.repository_selector_ambiguous": {
+      "parameters": [
+        "candidates"
+      ]
+    },
+    "cli.error.application": {
+      "parameters": []
+    },
+    "cli.error.repository_not_found": {
+      "parameters": []
+    },
+    "cli.error.protocol.count_out_of_range": {
+      "parameters": []
+    },
+    "cli.error.protocol.timestamp_out_of_range": {
+      "parameters": []
+    },
+    "cli.error.protocol.inconsistent_workspace_revision": {
+      "parameters": []
+    },
+    "cli.error.json_serialization": {
+      "parameters": []
+    },
+    "cli.error.signal_handler": {
+      "parameters": []
+    },
+    "cli.error.working_directory": {
+      "parameters": []
+    },
+    "cli.error.output": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8.command": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8.help_topic": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8.configuration_action": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8.repository_option": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8.option": {
+      "parameters": []
+    },
+    "cli.error.invalid_utf8": {
+      "parameters": [
+        "label"
+      ]
+    },
+    "cli.error.unknown_option": {
+      "parameters": [
+        "option"
+      ]
+    },
+    "cli.error.unknown_option_for_command": {
+      "parameters": [
+        "command",
+        "option"
+      ]
+    },
+    "cli.error.unknown_command": {
+      "parameters": [
+        "command"
+      ]
+    },
+    "cli.error.unknown_help_topic": {
+      "parameters": [
+        "topic"
+      ]
+    },
+    "cli.error.too_many_help_topics": {
+      "parameters": []
+    },
+    "cli.error.empty_discovery_root": {
+      "parameters": []
+    },
+    "cli.error.duplicate_option": {
+      "parameters": [
+        "option"
+      ]
+    },
+    "cli.error.missing_option_value": {
+      "parameters": [
+        "option"
+      ]
+    },
+    "cli.error.repositories_options_only": {
+      "parameters": []
+    },
+    "cli.error.limit_out_of_range": {
+      "parameters": [
+        "maximum"
+      ]
+    },
+    "cli.error.format_option_only": {
+      "parameters": [
+        "command"
+      ]
+    },
+    "cli.error.invalid_output_format": {
+      "parameters": []
+    },
+    "cli.error.verbose_requires_human_output": {
+      "parameters": []
+    },
+    "cli.error.configuration_action_count": {
+      "parameters": []
+    },
+    "cli.error.invalid_configuration_action": {
+      "parameters": [
+        "action"
+      ]
+    },
+    "cli.error.inspect_selector_count": {
+      "parameters": []
+    },
+    "cli.error.invalid_repository_selector": {
+      "parameters": []
+    },
+    "cli.error.invalid_integer": {
+      "parameters": [
+        "option"
+      ]
+    },
+    "cli.error.unexpected_global_argument": {
+      "parameters": []
+    },
+    "cli.error.command_takes_no_arguments": {
+      "parameters": [
+        "command"
+      ]
+    },
+    "cli.failure_report.title": {
+      "parameters": []
+    },
+    "cli.failure_report.schema_version": {
+      "parameters": []
+    },
+    "cli.failure_report.application_version": {
+      "parameters": []
+    },
+    "cli.failure_report.class": {
+      "parameters": []
+    },
+    "cli.failure_report.error_code": {
+      "parameters": []
+    },
+    "cli.failure_report.causes": {
+      "parameters": []
+    },
+    "cli.failure_report.none": {
+      "parameters": []
+    },
+    "cli.failure.class.expected": {
+      "parameters": []
+    },
+    "cli.failure.class.operational": {
+      "parameters": []
+    },
+    "cli.failure.class.defect": {
+      "parameters": []
+    },
+    "cli.failure.cause.permission_denied": {
+      "parameters": []
+    },
+    "cli.failure.cause.resource_unavailable": {
+      "parameters": []
+    },
+    "cli.failure.cause.process_exited": {
+      "parameters": [
+        "exit_code"
+      ]
+    },
+    "cli.failure.cause.io_failure": {
+      "parameters": []
+    },
+    "cli.failure.cause.storage_failure": {
+      "parameters": []
+    },
+    "cli.failure.cause.invalid_data": {
+      "parameters": []
+    },
+    "cli.failure.cause.output_limit_exceeded": {
+      "parameters": []
+    },
+    "cli.failure.cause.timed_out": {
+      "parameters": []
+    },
+    "cli.failure.cause.cancelled": {
+      "parameters": []
+    },
+    "cli.failure.cause.invariant_violation": {
+      "parameters": []
+    },
+    "cli.failure.cause.unexpected": {
+      "parameters": []
+    },
+    "cli.observation.failure.subject_unavailable": {
+      "parameters": []
+    },
+    "cli.observation.failure.process_exited": {
+      "parameters": [
+        "exit_code"
+      ]
+    },
+    "cli.observation.failure.timed_out": {
+      "parameters": []
+    },
+    "cli.observation.failure.cancelled": {
+      "parameters": []
+    },
+    "cli.observation.failure.output_limit_exceeded": {
+      "parameters": []
+    },
+    "cli.observation.failure.invalid_machine_output": {
+      "parameters": []
+    },
+    "cli.observation.failure.subject_disappeared": {
+      "parameters": []
+    },
+    "cli.refresh": {
+      "parameters": []
+    },
+    "cli.operation.status.complete": {
+      "parameters": []
+    },
+    "cli.operation.status.partial": {
+      "parameters": []
+    },
+    "cli.operation.status.failed": {
+      "parameters": []
+    },
+    "cli.operation.status.cancelled": {
+      "parameters": []
+    },
+    "cli.discovery.roots_requested": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.roots_completed": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.roots_partial": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.roots_failed": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.issues": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.identification_issues": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.repositories": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.locations": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.worktrees": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.discovery.details": {
+      "parameters": []
+    },
+    "cli.discovery.root": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.discovery.issue": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.discovery.identification_issue": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.discovery.failed_root": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.discovery.cause": {
+      "parameters": [
+        "cause"
+      ]
+    },
+    "cli.discovery.hint.roots": {
+      "parameters": []
+    },
+    "cli.refresh.targets": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.refresh.succeeded": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.refresh.failed": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.refresh.hint.unknown_git_state": {
+      "parameters": []
+    },
+    "cli.reset.title": {
+      "parameters": []
+    },
+    "cli.reset.discarded": {
+      "parameters": []
+    },
+    "cli.reset.rebuild_hint": {
+      "parameters": []
+    },
+    "cli.configuration.title": {
+      "parameters": []
+    },
+    "cli.configuration.file": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.configuration.source.defaults": {
+      "parameters": []
+    },
+    "cli.configuration.source.file": {
+      "parameters": []
+    },
+    "cli.configuration.locale": {
+      "parameters": [
+        "locale"
+      ]
+    },
+    "cli.configuration.discovery_roots.heading": {
+      "parameters": []
+    },
+    "cli.configuration.discovery_roots.empty": {
+      "parameters": []
+    },
+    "cli.configuration.exclusions.heading": {
+      "parameters": []
+    },
+    "cli.configuration.exclusions.empty": {
+      "parameters": []
+    },
+    "cli.configuration.bare_repositories.disabled": {
+      "parameters": []
+    },
+    "cli.configuration.bare_repositories.enabled": {
+      "parameters": []
+    },
+    "cli.configuration.symlink_traversal.do_not_follow": {
+      "parameters": []
+    },
+    "cli.configuration.symlink_traversal.follow_within_root": {
+      "parameters": []
+    },
+    "cli.configuration.filesystem_boundary.stay_on_root": {
+      "parameters": []
+    },
+    "cli.configuration.filesystem_boundary.cross_filesystems": {
+      "parameters": []
+    },
+    "cli.configuration.observation_parallelism": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.configuration.git_process_timeout": {
+      "parameters": [
+        "milliseconds"
+      ]
+    },
+    "cli.repositories.title": {
+      "parameters": []
+    },
+    "cli.repositories.repository": {
+      "parameters": [
+        "repository_id"
+      ]
+    },
+    "cli.repositories.locations.empty": {
+      "parameters": []
+    },
+    "cli.repositories.locations.heading": {
+      "parameters": []
+    },
+    "cli.location.available": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.location.missing": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.location.offline": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.repositories.worktrees": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.repositories.local_work.yes": {
+      "parameters": []
+    },
+    "cli.repositories.local_work.no": {
+      "parameters": []
+    },
+    "cli.repositories.local_work.unknown": {
+      "parameters": []
+    },
+    "cli.repositories.remotes.yes": {
+      "parameters": []
+    },
+    "cli.repositories.remotes.no": {
+      "parameters": []
+    },
+    "cli.repositories.remotes.unknown": {
+      "parameters": []
+    },
+    "cli.repositories.pagination": {
+      "parameters": [
+        "shown",
+        "offset",
+        "total"
+      ]
+    },
+    "cli.repository.header": {
+      "parameters": [
+        "repository_id"
+      ]
+    },
+    "cli.repository.locations": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.repository.remotes.none": {
+      "parameters": []
+    },
+    "cli.repository.remotes.count": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.repository.remotes.unknown.never_observed": {
+      "parameters": []
+    },
+    "cli.repository.remotes.unknown.failed": {
+      "parameters": [
+        "failure",
+        "age"
+      ]
+    },
+    "cli.repository.remotes.unknown": {
+      "parameters": []
+    },
+    "cli.repository.worktrees": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.repository.worktree.header": {
+      "parameters": [
+        "worktree_id"
+      ]
+    },
+    "cli.repository.worktree.path": {
+      "parameters": [
+        "path"
+      ]
+    },
+    "cli.repository.worktree.availability.available": {
+      "parameters": []
+    },
+    "cli.repository.worktree.availability.missing": {
+      "parameters": []
+    },
+    "cli.repository.worktree.availability.offline": {
+      "parameters": []
+    },
+    "cli.repository.worktree.head.unborn": {
+      "parameters": [
+        "branch"
+      ]
+    },
+    "cli.repository.worktree.head.branch": {
+      "parameters": [
+        "branch"
+      ]
+    },
+    "cli.repository.worktree.head.detached": {
+      "parameters": []
+    },
+    "cli.repository.worktree.upstream.unconfigured": {
+      "parameters": []
+    },
+    "cli.repository.worktree.upstream.gone": {
+      "parameters": [
+        "remote",
+        "branch"
+      ]
+    },
+    "cli.repository.worktree.upstream.tracking": {
+      "parameters": [
+        "remote",
+        "branch",
+        "ahead",
+        "behind"
+      ]
+    },
+    "cli.repository.worktree.upstream.not_applicable": {
+      "parameters": []
+    },
+    "cli.repository.worktree.changes": {
+      "parameters": [
+        "staged",
+        "unstaged",
+        "untracked"
+      ]
+    },
+    "cli.repository.worktree.git_state.unknown.never_observed": {
+      "parameters": []
+    },
+    "cli.repository.worktree.git_state.unknown.failed": {
+      "parameters": [
+        "failure",
+        "age"
+      ]
+    },
+    "cli.repository.worktree.git_state.unknown": {
+      "parameters": []
+    },
+    "cli.value.yes": {
+      "parameters": []
+    },
+    "cli.value.no": {
+      "parameters": []
+    },
+    "cli.observation.status.never_observed": {
+      "parameters": []
+    },
+    "cli.observation.status.observed.complete": {
+      "parameters": [
+        "age"
+      ]
+    },
+    "cli.observation.status.observed.partial": {
+      "parameters": [
+        "age"
+      ]
+    },
+    "cli.observation.status.failed.no_success": {
+      "parameters": [
+        "failure",
+        "age"
+      ]
+    },
+    "cli.observation.status.failed.last_success.complete": {
+      "parameters": [
+        "failure",
+        "attempted_age",
+        "success_age"
+      ]
+    },
+    "cli.observation.status.failed.last_success.partial": {
+      "parameters": [
+        "failure",
+        "attempted_age",
+        "success_age"
+      ]
+    },
+    "cli.time.ago": {
+      "parameters": [
+        "duration"
+      ]
+    },
+    "cli.time.in": {
+      "parameters": [
+        "duration"
+      ]
+    },
+    "cli.advisories.count": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.advisories.evidence_unavailable": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.advisory.repository.no_remotes": {
+      "parameters": [
+        "repository_id"
+      ]
+    },
+    "cli.advisory.repository.remote_count": {
+      "parameters": [
+        "repository_id",
+        "count"
+      ]
+    },
+    "cli.advisory.repository.worktree_count": {
+      "parameters": [
+        "repository_id",
+        "count"
+      ]
+    },
+    "cli.advisory.worktree.upstream_unconfigured": {
+      "parameters": [
+        "worktree_id"
+      ]
+    },
+    "cli.advisory.worktree.known_upstream_divergence": {
+      "parameters": [
+        "worktree_id",
+        "ahead",
+        "behind"
+      ]
+    },
+    "cli.advisory.inconsistent_subject": {
+      "parameters": []
+    },
+    "cli.overview.repositories": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.available_repositories": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.worktrees": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.repositories_with_local_work": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.repositories_with_unknown_local_work": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.repositories_without_remotes": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.repositories_with_unknown_remotes": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.advisory.repository_without_remotes": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.advisory.repository_has_multiple_worktrees": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.advisory.worktree_without_upstream": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.overview.advisory.worktree_ahead_of_known_upstream": {
+      "parameters": [
+        "count"
+      ]
+    },
+    "cli.help.section.usage": {
+      "parameters": []
+    },
+    "cli.help.section.workflow": {
+      "parameters": []
+    },
+    "cli.help.section.commands": {
+      "parameters": []
+    },
+    "cli.help.section.arguments": {
+      "parameters": []
+    },
+    "cli.help.section.options": {
+      "parameters": []
+    },
+    "cli.help.section.behavior": {
+      "parameters": []
+    },
+    "cli.help.section.examples": {
+      "parameters": []
+    },
+    "cli.help.section.notes": {
+      "parameters": []
+    },
+    "cli.help.option.show_help": {
+      "parameters": []
+    },
+    "cli.help.option.show_version": {
+      "parameters": []
+    },
+    "cli.help.option.output_format": {
+      "parameters": []
+    },
+    "cli.help.protocol.operation": {
+      "parameters": []
+    },
+    "cli.help.protocol.read": {
+      "parameters": []
+    },
+    "cli.help.network.none": {
+      "parameters": []
+    },
+    "cli.help.root.title": {
+      "parameters": []
+    },
+    "cli.help.root.summary": {
+      "parameters": []
+    },
+    "cli.help.root.workflow.discover": {
+      "parameters": []
+    },
+    "cli.help.root.workflow.refresh": {
+      "parameters": []
+    },
+    "cli.help.root.workflow.repositories": {
+      "parameters": []
+    },
+    "cli.help.root.workflow.inspect": {
+      "parameters": []
+    },
+    "cli.help.root.workflow.overview": {
+      "parameters": []
+    },
+    "cli.help.command.discover.description": {
+      "parameters": []
+    },
+    "cli.help.command.refresh.description": {
+      "parameters": []
+    },
+    "cli.help.command.config.description": {
+      "parameters": []
+    },
+    "cli.help.command.reset.description": {
+      "parameters": []
+    },
+    "cli.help.command.repositories.description": {
+      "parameters": []
+    },
+    "cli.help.command.inspect.description": {
+      "parameters": []
+    },
+    "cli.help.command.overview.description": {
+      "parameters": []
+    },
+    "cli.help.root.behavior.persisted_queries": {
+      "parameters": []
+    },
+    "cli.help.root.behavior.no_implicit_network": {
+      "parameters": []
+    },
+    "cli.help.root.behavior.read_only_git": {
+      "parameters": []
+    },
+    "cli.help.root.command_specific_hint": {
+      "parameters": []
+    },
+    "cli.help.discover.summary": {
+      "parameters": []
+    },
+    "cli.help.discover.argument.roots": {
+      "parameters": []
+    },
+    "cli.help.discover.argument.explicit_roots": {
+      "parameters": []
+    },
+    "cli.help.discover.option.verbose": {
+      "parameters": []
+    },
+    "cli.help.discover.behavior.reconcile_only": {
+      "parameters": []
+    },
+    "cli.help.discover.behavior.partial": {
+      "parameters": []
+    },
+    "cli.help.discover.note.leading_dash": {
+      "parameters": []
+    },
+    "cli.help.discover.note.verbose_privacy": {
+      "parameters": []
+    },
+    "cli.help.refresh.summary": {
+      "parameters": []
+    },
+    "cli.help.refresh.behavior.no_discovery": {
+      "parameters": []
+    },
+    "cli.help.refresh.behavior.persists": {
+      "parameters": []
+    },
+    "cli.help.refresh.behavior.cancel": {
+      "parameters": []
+    },
+    "cli.help.config.summary": {
+      "parameters": []
+    },
+    "cli.help.config.argument.show": {
+      "parameters": []
+    },
+    "cli.help.config.behavior.read_only": {
+      "parameters": []
+    },
+    "cli.help.reset.summary": {
+      "parameters": []
+    },
+    "cli.help.reset.behavior.removes": {
+      "parameters": []
+    },
+    "cli.help.reset.behavior.revision": {
+      "parameters": []
+    },
+    "cli.help.reset.behavior.no_git_modification": {
+      "parameters": []
+    },
+    "cli.help.reset.behavior.preserve_configuration": {
+      "parameters": []
+    },
+    "cli.help.reset.note.rebuild": {
+      "parameters": []
+    },
+    "cli.help.repositories.summary": {
+      "parameters": []
+    },
+    "cli.help.repositories.option.offset": {
+      "parameters": []
+    },
+    "cli.help.repositories.option.limit": {
+      "parameters": [
+        "default",
+        "maximum"
+      ]
+    },
+    "cli.help.repositories.behavior.persisted_only": {
+      "parameters": []
+    },
+    "cli.help.inspect.summary": {
+      "parameters": []
+    },
+    "cli.help.inspect.argument.selector": {
+      "parameters": []
+    },
+    "cli.help.inspect.argument.id_precedence": {
+      "parameters": []
+    },
+    "cli.help.inspect.argument.ambiguity": {
+      "parameters": []
+    },
+    "cli.help.inspect.behavior.persisted_only": {
+      "parameters": []
+    },
+    "cli.help.inspect.behavior.freshness": {
+      "parameters": []
+    },
+    "cli.help.inspect.behavior.ahead_behind": {
+      "parameters": []
+    },
+    "cli.help.overview.summary": {
+      "parameters": []
+    },
+    "cli.help.overview.behavior.aggregate": {
+      "parameters": []
+    },
+    "cli.help.overview.behavior.unknown": {
+      "parameters": []
+    },
+    "cli.help.overview.behavior.no_io": {
+      "parameters": []
+    }
+  }
+}

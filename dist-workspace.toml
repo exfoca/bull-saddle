@@ -1,0 +1,20 @@
+# BullSaddle — Developed by Orion Impact (https://orion-impact.com)
+# Licensed under the Apache License, Version 2.0.
+# SPDX-License-Identifier: Apache-2.0
+
+[workspace]
+members = ["cargo:."]
+
+[dist]
+cargo-dist-version = "0.32.0"
+ci = []
+installers = []
+install-updater = false
+checksum = "sha256"
+cargo-auditable = true
+cargo-cyclonedx = true
+# Release targets are support claims. Add a target only when its relevant
+# invariants are executed natively by the release gate on that target.
+targets = [
+    "x86_64-unknown-linux-gnu",
+]

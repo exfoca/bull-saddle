@@ -1,0 +1,30 @@
+# BullSaddle — Developed by Orion Impact (https://orion-impact.com)
+# Licensed under the Apache License, Version 2.0.
+# SPDX-License-Identifier: Apache-2.0
+
+[package]
+name = "bulls-cli"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[package.metadata.dist]
+dist = true
+
+[build-dependencies]
+bulls-i18n.workspace = true
+
+[dependencies]
+bulls-application.workspace = true
+bulls-runtime.workspace = true
+ctrlc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "bulls"
+path = "src/main.rs"

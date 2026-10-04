@@ -1,0 +1,46 @@
+# BullSaddle — Developed by Orion Impact (https://orion-impact.com)
+# Licensed under the Apache License, Version 2.0.
+# SPDX-License-Identifier: Apache-2.0
+
+[workspace]
+resolver = "3"
+members = [
+    "crates/bulls-core",
+    "crates/bulls-application",
+    "crates/bulls-infra",
+    "crates/bulls-runtime",
+    "crates/bulls-cli",
+    "tools/bulls-i18n",
+]
+default-members = ["crates/bulls-cli"]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2024"
+publish = false
+license = "Apache-2.0"
+
+[workspace.dependencies]
+bulls-core = { path = "crates/bulls-core" }
+bulls-application = { path = "crates/bulls-application" }
+bulls-infra = { path = "crates/bulls-infra" }
+bulls-runtime = { path = "crates/bulls-runtime" }
+bulls-i18n = { path = "tools/bulls-i18n" }
+ctrlc = "3.5.2"
+file-id = { package = "rolldown-file-id", version = "0.2.10" }
+rusqlite = { version = "0.40.2", default-features = false, features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+toml = "1.1.6"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+dbg_macro = "deny"
+todo = "deny"
+unimplemented = "deny"
+
+[profile.dist]
+inherits = "release"
+lto = "thin"
